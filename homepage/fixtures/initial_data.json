@@ -1,0 +1,107 @@
+[
+{
+    "model": "homepage.articletranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en-us",
+        "title": "localization article",
+        "content": "hey you are currently learning about how to apply localization in django app dynamically",
+        "master": 1
+    }
+},
+{
+    "model": "homepage.articletranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "en-us",
+        "title": "django channels article",
+        "content": "heyyy how's your learning going ?",
+        "master": 2
+    }
+},
+{
+    "model": "homepage.articletranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en-us",
+        "title": "article1",
+        "content": "dhofhiorefjotgiotgihgiogtghptghtihgi",
+        "master": 3
+    }
+},
+{
+    "model": "homepage.articletranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "en-us",
+        "title": "heyy",
+        "content": "ehjheifuifuoe",
+        "master": 4
+    }
+},
+{
+    "model": "homepage.articletranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "title": "English: localization article",
+        "content": "hdojfjrferufigjrkgjgjigpeoigoigigofgiofgi",
+        "master": 5
+    }
+},
+{
+    "model": "homepage.articletranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "es",
+        "title": "Artículo de localización",
+        "content": "hdojfjrferufigjrkgjgjigpeoigoigigofgiofgi",
+        "master": 5
+    }
+},
+{
+    "model": "homepage.articletranslation",
+    "pk": 7,
+    "fields": {
+        "language_code": "fr",
+        "title": "Article de localisation",
+        "content": "hdojfjrferufigjrkgjgjigpeoigoigigofgiofgi",
+        "master": 5
+    }
+},
+{
+    "model": "homepage.article",
+    "pk": 1,
+    "fields": {
+        "created_at": "2026-10-14T08:18:27.046Z"
+    }
+},
+{
+    "model": "homepage.article",
+    "pk": 2,
+    "fields": {
+        "created_at": "2026-10-14T08:40:58.666Z"
+    }
+},
+{
+    "model": "homepage.article",
+    "pk": 3,
+    "fields": {
+        "created_at": "2026-10-14T08:55:13.657Z"
+    }
+},
+{
+    "model": "homepage.article",
+    "pk": 4,
+    "fields": {
+        "created_at": "2026-10-14T09:00:04.415Z"
+    }
+},
+{
+    "model": "homepage.article",
+    "pk": 5,
+    "fields": {
+        "created_at": "2026-10-14T09:06:55.179Z"
+    }
+}
+]
