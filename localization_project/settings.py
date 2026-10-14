@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'parler',
     'homepage',
 ]
 
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -110,17 +113,34 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Karachi'
 
 USE_I18N = True
 
 USE_TZ = True
+
+USE_L10N = True
 
 LANGUAGES = [
     ('en', 'English'),
     ('es', 'Spanish'),
     ('fr', 'French'),
 ]
+
+# Add this block so parler knows about your languages
+PARLER_LANGUAGES = {
+    # This site ID matches your database (usually site 1)
+    1: (
+        {'code': 'en'},
+        {'code': 'es'},
+        {'code': 'fr'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
+
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 

@@ -3,17 +3,28 @@
 
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
+
 <head>
     <title>{% trans "Localization Project" %}</title>
 </head>
+
 <body>
     <h1>{{ greeting }}</h1>
     <p>{% trans "Number:" %} {{ large_number }}</p>
     <p>{% trans "Date:" %} {{ current_date }}</p>
+    {% if article %}
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.content }}</p>
+    <small>Created at: {{ article.created_at }}</small><br><br>
+    {% else %}
+    <p>No article found. Add one in the admin panel!</p><br><br>
+
+    {% endif %}
+
 
     <form action="{% url 'set_language' %}" method="post">
         {% csrf_token %}
-        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        <input name="next" type="hidden" value="{{ request.path }}" />
         <select name="language">
             <option value="en" {% if LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
             <option value="es" {% if LANGUAGE_CODE == "es" %}selected{% endif %}>Español</option>
@@ -22,4 +33,5 @@
         <input type="submit" value="Change Language">
     </form>
 </body>
+
 </html>
