@@ -1,12 +1,15 @@
+{% load i18n %}
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Localization Project</title>
+    <title>{% trans "Localization Project" %}</title>
 </head>
 <body>
     <h1>{{ greeting }}</h1>
-    <p>Number: {{ large_number }}</p>
-    <p>Date: {{ current_date }}</p>
+    <p>{% trans "Number:" %} {{ large_number }}</p>
+    <p>{% trans "Date:" %} {{ current_date }}</p>
 
 
     <form action="{% url 'set_language' %}" method="post">
