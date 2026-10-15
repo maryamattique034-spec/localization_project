@@ -1,2 +1,7 @@
 *.sqlite
 *.sqlite3
+.env
+myenv/
+__pycache__/settings.cpython-313.pyc
+*.pyc
+staticfiles/*
